@@ -1,0 +1,56 @@
+[
+  {
+    "id": "t-add",
+    "title": "两数相加",
+    "level": "入门",
+    "fileName": "starter.py",
+    "starter": "def add(a, b):\n    return a + b\n\n\na, b = map(int, input().split())\nprint(add(a, b))\n",
+    "desc": "读入一行两个整数，编写函数 add(a, b) 返回两数之和，并输出结果。",
+    "reqs": ["定义函数 add(a, b)，用 return 返回两数之和", "从输入读取一行两个整数 a 和 b", "调用 add(a, b) 并输出结果"],
+    "hint": "return 把结果交还给调用方；input() 读到的是字符串，用 map(int, …) 转换成整数。",
+    "sampleIn": "2 3",
+    "sampleOut": "5",
+    "tags": ["函数", "入门"],
+    "tests": [
+      { "name": "正整数", "input": "2 3", "expected": "5" },
+      { "name": "含负数", "input": "-4 9", "expected": "5" },
+      { "name": "零", "input": "0 0", "expected": "0" }
+    ]
+  },
+  {
+    "id": "t-reverse",
+    "title": "字符串反转",
+    "level": "入门",
+    "fileName": "reverse.py",
+    "starter": "s = input()\n# 在此编写代码，反转 s 并输出\nprint(s)\n",
+    "desc": "读入一行字符串，将其反转后输出。",
+    "reqs": ["读取一行字符串", "将字符串反转", "输出反转后的结果"],
+    "hint": "Python 切片 s[::-1] 可以直接得到反转字符串。",
+    "sampleIn": "hello",
+    "sampleOut": "olleh",
+    "tags": ["字符串", "切片"],
+    "tests": [
+      { "name": "单词", "input": "hello", "expected": "olleh" },
+      { "name": "数字串", "input": "12345", "expected": "54321" },
+      { "name": "空串", "input": "", "expected": "" }
+    ]
+  },
+  {
+    "id": "t-even",
+    "title": "判断奇偶",
+    "level": "入门",
+    "fileName": "even.py",
+    "starter": "n = int(input())\n# 在此编写代码：若 n 为偶数输出 EVEN，否则输出 ODD\n",
+    "desc": "读入一个整数 n，若其为偶数输出 EVEN，否则输出 ODD。",
+    "reqs": ["读取一个整数", "判断奇偶", "偶数输出 EVEN、奇数输出 ODD"],
+    "hint": "用取模运算 n % 2 == 0 判断是否为偶数。",
+    "sampleIn": "4",
+    "sampleOut": "EVEN",
+    "tags": ["分支", "运算符"],
+    "tests": [
+      { "name": "偶数", "input": "4", "expected": "EVEN" },
+      { "name": "奇数", "input": "7", "expected": "ODD" },
+      { "name": "零", "input": "0", "expected": "EVEN" }
+    ]
+  }
+]
